@@ -19,16 +19,26 @@ namespace DictionaryExample
 
             //dictEmployees.Add(emp1.Id, emp1);
 
-            Console.Write("Enter key: ");
-            int key = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter key: ");
+            //int key = Convert.ToInt32(Console.ReadLine());
 
-            if (dictEmployees.ContainsKey(key))
+            //if (dictEmployees.ContainsKey(key))
+            //{
+            //    Employee emp = dictEmployees[key];
+            //    Console.WriteLine(emp);
+            //}
+            //else
+            //    Console.WriteLine("Invalid key");
+
+            //foreach(KeyValuePair<int, Employee> kvp in dictEmployees)
+            foreach(var kvp in dictEmployees)
             {
-                Employee emp = dictEmployees[key];
-                Console.WriteLine(emp);
+                int key = kvp.Key;
+                Employee e = kvp.Value;
+
+                Console.WriteLine("Key = " + key);
+                Console.WriteLine(e);
             }
-            else
-                Console.WriteLine("Invalid key");
         }
     }
 }
