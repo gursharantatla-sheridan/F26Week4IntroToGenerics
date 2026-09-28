@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="CollectionsInCSharp/CollectionsInCSharp.csproj" />
   <Project Path="F26Week4IntroToGenerics/F26Week4IntroToGenerics.csproj" />
 </Solution>
