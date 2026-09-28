@@ -42,14 +42,14 @@
 
 
             // Exists()
-            if (employees.Exists(e => e.Name.StartsWith("A")))
+            if (employees.Exists(e => e.Name!.StartsWith("A")))
                 Console.WriteLine("\nEmployee found");
             else
                 Console.WriteLine("\nEmployee not found");
 
 
             // Find()
-            Employee emp = employees.Find(e => e.Salary >= 6000);
+            Employee emp = employees.Find(e => e.Salary >= 6000)!;
 
             if (emp != null)
                 Console.WriteLine(emp);
