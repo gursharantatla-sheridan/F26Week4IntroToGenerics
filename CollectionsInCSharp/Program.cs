@@ -58,11 +58,17 @@ namespace CollectionsInCSharp
 
             // List example
 
-            List<int> myList = new List<int>();
+            // GOOD - dynamic in size
+            // GOOD - no boxing / unboxing
+            // GOOD - type-safe
+
+            List<int> myList = new List<int>(50);
+            Console.WriteLine(myList.Capacity);
             myList.Add(10);
             myList.Add(20);
             myList.Add(30);
             myList.Add(40);
+            //myList.Add("hello");
 
             sum = 0;
 
