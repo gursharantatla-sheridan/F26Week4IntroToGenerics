@@ -17,7 +17,7 @@
             if (AreEqual(5, 5))
                 Console.WriteLine("Both are equal");
             else
-                Console.WriteLine("Both are not equal)";
+                Console.WriteLine("Both are not equal");
         }
 
         static bool AreEqual(object value1, object value2)
